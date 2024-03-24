@@ -1,7 +1,4 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: $DARK;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -13,8 +10,8 @@
       font-size: 30px;
       font-weight: 400;
       font-family: $SECOND_FONT;
-      line-height: 50px;
-      letter-spacing: 0.6px;
+      line-height: 167%;
+      letter-spacing: 0.02em;
       color: $WHITE;
     }
   }
@@ -42,7 +39,7 @@
         height: 2px;
         width: 0%;
         background-color: $GOLD;
-        transition: width 0.3s ease-in-out;
+        transition: width 0.2s ease-in-out;
       }
       &:hover::after {
         width: 100%;
@@ -51,7 +48,8 @@
 
     &_link {
       font-size: 20px;
-      line-height: 50px;
+      font-weight: 400;
+      line-height: 250%;
       color: $WHITE;
       transition: color 0.2s ease-in-out;
       &:hover {
@@ -75,4 +73,9 @@
       }
     }
   }
+}
+
+.container {
+  display: flex;
+  align-items: center;
 }
