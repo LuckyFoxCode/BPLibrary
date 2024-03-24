@@ -1,0 +1,58 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &_info {
+      display: flex;
+      flex-direction: column;
+      font-size: 20px;
+      line-height: 200%;
+      letter-spacing: 0.1em;
+      text-transform: capitalize;
+    }
+
+    &_map {
+      display: flex;
+    }
+  }
+
+  &__staff {
+    font-weight: 700;
+    color: $BLACK;
+    margin-bottom: 40px;
+    &:last-child {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__person_email {
+    color: $BLACK;
+    font-weight: 700;
+    transition: color 0.2s ease-in-out;
+    &:hover {
+      color: $GOLD;
+    }
+  }
+}
+
+.phone_info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+
+  &__text_tel {
+    color: $BLACK;
+    transition: color 0.2s ease-in-out;
+    &:hover {
+      color: $GOLD;
+    }
+  }
+}
