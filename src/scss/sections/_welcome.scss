@@ -1,9 +1,8 @@
 .welcome {
   position: relative;
-  height: 600px;
-  width: 100%;
+  min-height: 600px;
   background-image: linear-gradient(180deg, $DARK 0%, rgb($DARK, 0.1) 100%),
-    url('../../../images/Welcome_bg.jpg');
+    url('../images/pic/Welcome_bg.jpg');
   background-size: contain;
 
   &__wrapper {
