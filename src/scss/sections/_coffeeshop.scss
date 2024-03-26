@@ -1,0 +1,72 @@
+.coffee_shop {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+
+    &_title {
+      font-family: $SECOND_FONT;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 100%;
+      letter-spacing: 0.05em;
+      text-transform: capitalize;
+      color: $GOLD;
+      margin-bottom: 40px;
+    }
+
+    &_item {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.menu-item {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 200%;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+  color: $BLACK;
+
+  &__right {
+    text-align: right;
+    justify-content: flex-end;
+  }
+
+  &__title {
+    display: flex;
+    flex: 1;
+  }
+
+  &__line {
+    width: 100px;
+    height: 1px;
+    background-color: $GOLD;
+    margin-left: 60px;
+  }
+
+  &__price {
+    font-family: $SECOND_FONT;
+    margin-left: 60px;
+  }
+}
